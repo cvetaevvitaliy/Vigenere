@@ -16,8 +16,3 @@ VIGENERE_OBJS = $(VIGENERE_SRCS:.c=.o)
 # Target for make
 $(VIGENERE): $(VIGENERE_OBJS)
 	$(CC) $(CFLAGS) -o $(VIGENERE) $(VIGENERE_SRCS)
-
-
-# Target for clean
-clean:
-	rm -f core $(VIGENERE_OBJS) $(VIGENERE)
